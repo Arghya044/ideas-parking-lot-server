@@ -83,8 +83,8 @@ const connectDB = async () => {
 // Middleware
 app.use(cors({ 
   origin: process.env.NODE_ENV === 'production' 
-    ? process.env.FRONTEND_URL || 'https://your-frontend-domain.vercel.app'
-    : 'http://localhost:3000', 
+    ? process.env.FRONTEND_URL || 'https://ideas-parking-lot-client.vercel.app'
+    : 'https://ideas-parking-lot-client.vercel.app', 
   credentials: true 
 }));
 app.use(express.json());
