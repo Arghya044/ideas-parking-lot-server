@@ -1,39 +1,35 @@
 {
   "name": "ideas-parking-lot-backend",
-  "version": "1.0.0",
-  "description": "Backend API for Ideas Parking Lot application with Google OAuth",
+  "version": "2.0.0",
+  "description": "Ideas Parking Lot API with Firebase Authentication",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "echo 'Building for Vercel'"
   },
   "keywords": [
     "express",
     "mongodb",
-    "ideas",
-    "api",
-    "google-oauth",
-    "jwt",
-    "authentication"
+    "firebase",
+    "rest-api",
+    "ideas"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
-    "mongodb": "^6.3.0",
-    "dotenv": "^16.3.1",
     "cors": "^2.8.5",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2",
-    "express-validator": "^7.0.1",
-    "google-auth-library": "^9.4.1"
+    "dotenv": "^16.3.1",
+    "mongodb": "^6.3.0",
+    "firebase-admin": "^12.0.0",
+    "express-validator": "^7.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8.0.0"
+    "node": ">=18.x"
   }
 }
